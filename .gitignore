@@ -1,5 +1,5 @@
 # ignore all PNG files
-.PNG
+*.PNG
 
 # ignore all files in the Plots directory
 Plots/**
