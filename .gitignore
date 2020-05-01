@@ -3,3 +3,4 @@
 
 # ignore all files in the Plots directory
 Plots/**
+Backup/**
