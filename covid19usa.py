@@ -11,11 +11,7 @@ from scipy.optimize import fsolve
 from scipy.ndimage.filters import gaussian_filter1d
 import matplotlib.pyplot as plt
 
-<<<<<<< HEAD
 CONST_SIGMA = 3                             # Smoothing value for gausian filter
-=======
-CONST_SIGMA = 2                             # Smoothing value for gausian filter
->>>>>>> 2f4f0dd9586936080e54af25e0f0b7a44095c7cd
 
 # Define URL for data
 # FIXED: https issue: python3 -m pip install --upgrade certifi
