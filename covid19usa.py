@@ -49,9 +49,13 @@ end_date = c
 print("a,b,c = ", a,b,c)
 print("error(s) = ", errors)
 
-#Find the infection end day
+# Find the infection end day
 sol = int(fsolve(lambda x : logistic_model(x,a,b,c) - int(c),b))
 print("Infection End Day = Day ", sol)
+
+# 95-99 percentile infection
+sol_1 = int(fsolve(lambda x : logistic_model(x,a,b,c) - int(0.9973*c),b))
+print("99.7% (3-sigma) Projected Infections  = Day ", sol_1)
 
 # Exponential Model - unstoppable growth
 def exponential_model(x,a,b,c):
