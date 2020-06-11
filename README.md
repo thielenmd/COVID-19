@@ -8,4 +8,4 @@ python3 -m pip install --upgrade certifi
 ```
 
 ## Helpful Hints
-As more data is available, it may be necessary to update the initial conditions **p0** for the logistic and exponential model in order for the solver to properly calculate a fir for each model.
+As more data is available, it may be necessary to update the initial conditions *p0* for the logistic and exponential model in order for the solver to properly calculate a fit for each model.
