@@ -22,8 +22,8 @@ df = pd.read_csv(url, header=None)
 
 # Pull the US data and Change the dates into numbers
 # Take number of days since 1/1/2020
-# US data is currently in the 226th row and dates start at column 4 (zero-origin)
-df = df.iloc[[0,226],4:]
+# US data is currently in the 243rd row and dates start at column 4 (zero-origin)
+df = df.iloc[[0,243],4:]
 df = df.T
 df.columns=["date", "total_cases"]
 FMT = '%m/%d/%y'
