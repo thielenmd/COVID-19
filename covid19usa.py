@@ -61,7 +61,7 @@ print("99.7% (3-sigma) Projected Infections  = Day ", sol_1)
 def exponential_model(x,a,b,c):
     return a*np.exp(b*(x-c))
 
-exp_fit = curve_fit(exponential_model,x,y,p0=[2,2,200])
+exp_fit = curve_fit(exponential_model,x,y,p0=[1,3,250])
 
 # Infection Rates
 infection_rate = np.diff(y)
