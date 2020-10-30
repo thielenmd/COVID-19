@@ -22,8 +22,8 @@ df = pd.read_csv(url, header=None)
 
 # Pull the US data and Change the dates into numbers
 # Take number of days since 1/1/2020
-# US data is currently in the 244th row and dates start at column 4 (zero-origin)
-df = df.iloc[[0,244],4:]
+# US data is currently in the 245th row and dates start at column 4 (zero-origin)
+df = df.iloc[[0,245],4:]
 df = df.T
 df.columns=["date", "total_cases"]
 FMT = '%m/%d/%y'
@@ -61,7 +61,7 @@ print("99.7% (3-sigma) Projected Infections  = Day ", sol_1)
 def exponential_model(x,a,b,c):
     return a*np.exp(b*(x-c))
 
-exp_fit = curve_fit(exponential_model,x,y,p0=[1,2.5,225])
+exp_fit = curve_fit(exponential_model,x,y,p0=[0.5,50,200])
 
 # Infection Rates
 infection_rate = np.diff(y)
